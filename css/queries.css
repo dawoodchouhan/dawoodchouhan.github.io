@@ -1,0 +1,128 @@
+
+/* media queries */
+@media screen and (min-width: 1024px) {
+    .project-half-img {
+        height: 255px;
+    }
+    .projects img:not(.project-half-img) {
+        height: 570px;
+    }
+.illustration {
+        float: right;
+    }
+    
+} 
+
+@media screen and (max-width: 1024px) {
+ 
+   
+    #header-content .large-5 {
+        margin-bottom: -150px;
+        margin-top: -30px;
+    }
+   
+
+    .last-project {
+        display: none;
+    }
+
+  .project:not(.last-project) {
+        display: block;
+        margin: 0 auto;
+        width: 620px;
+    }
+
+    .project:first-child img{
+        height: 270px;
+    }
+
+    .project:hover {
+        margin-bottom: 55px;
+    }
+    
+}
+@media screen and (max-width: 805px) {
+   
+/* laptop image overflowing at 805 */
+    header {
+        background: url("../img/header-home-bg-tablet.png");
+        height: 1050px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+   
+
+  /*  header {
+        background: url("../img/header-home-bg-tablet.png");
+        height: 1050px;
+    } */
+    .project:not(.last-project) {
+        display: block;
+        margin: 0 auto;
+        width: 420px;
+    }
+    .last-project {
+        display: none;
+    }
+     .circle {
+        width: 110px;
+        padding: 10px;
+        line-height: 90px;
+    }
+      h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    nav ul {
+        margin-top: 0
+    }
+
+    nav ul li {
+        padding-left: 20px
+    }
+
+    .project:not(.last-project) {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+    .last-project {
+        display: none;
+    }
+    .timeline::after {
+        left: 31px;
+    }
+    .container1 {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 40px;
+        text-align: left;
+    }
+    .left::after,
+    .right::after {
+        left: 17px;
+    }
+    .right {
+        left: 0%;
+    }
+    .circle {
+        width: 90px;
+        padding: 8px;
+        line-height: 70px;
+    }
+     button.btn-gr, button.btn-purple {
+        width: 144px;
+        height: 40px;
+        font-size: 14px;
+    }
+   
+   
+}

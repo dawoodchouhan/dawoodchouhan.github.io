@@ -1,0 +1,139 @@
+h1,p
+{
+	color:#000
+	}
+
+body,html
+{
+	
+	padding:0;
+	margin:0;
+	
+	}
+	a{
+		text-decoration: none;
+		
+	}
+
+h1
+{
+	font-size:112px;
+	font-size:7.9vw;
+	letter-spacing:-2px;
+	line-height:110%;
+	font-family:Semibold;
+	position:fixed;
+	top:34%;
+	left:10%
+	} 
+.text
+{
+	
+	overflow:hidden;
+	}
+.animate{
+	
+	animation:animate 1.2s cubic-bezier(.2,.6,.2,1);
+	
+	
+	}
+@-webkit-keyframes animate
+{
+	0%
+	{
+		-webkit-transform:translateY(100%)
+		}
+	100%{-webkit-transform:translateY(0)}}
+@keyframes animate{
+	0%{
+		transform:translateY(100%)
+		}
+	100%{
+		transform:translateY(0)
+	}
+}
+.delay{
+	-webkit-animation-delay:.3s;
+	animation-delay:.3
+	}
+.about{
+	position:absolute;
+	top:100vh;
+	left:50%;
+	right:10%;
+	padding-bottom:34vh
+	}
+h2{
+	font-size:32px;
+	font-size:2.2vw;
+	line-height:140%;
+	font-family:Medium;
+	margin-bottom:10%
+	}
+p{
+	font-size:18px;
+	font-size:1.25vw;
+	line-height:180%;
+	font-family:Regular;
+	margin-bottom:6%
+	}
+b{
+	font-family:Medium
+	}
+
+
+button:focus {
+    outline: none;
+}
+
+button {
+    width: 224px;
+    height: 56px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-family: 'Calibri', 'Helvetica', 'san-serif';
+    letter-spacing: 0.5px;
+}
+
+.btn-gr {
+    background-image: linear-gradient(to right, #2a055e, #4f1a99 32%, #755c9c 72%, #ffa3a3);
+    box-shadow: 0.7px 3.9px 8px 0 rgba(80, 103, 179, 0.5);
+     border-radius: 8px;
+}
+
+.btn-gr:hover{
+    background-image: linear-gradient( 180deg, rgb(61, 186, 186) 0%, rgb(75, 133, 175) 35%, rgb(89, 79, 163) 100%);
+    
+   
+    box-shadow: 0.695px 3.939px 8px 0px rgba(80, 103, 179, 0.5);
+   
+    font-weight: bold;
+}
+
+.btn-gr:active {
+    background-image: linear-gradient(to right, #3a3172, #f3bbb7);
+    box-shadow: 0.7px 3.9px 8px 0 rgba(80, 103, 179, 0.5);
+}
+
+@media screen and (max-width:667px){
+
+	h1{
+		font-size:68px;
+		font-size:18vw
+		}
+	h2{
+		font-size:24px;
+		font-size:6.4vw
+		}
+	p{
+		font-size:18px;
+		font-size:4.8vw
+		}
+	.about{
+		left:0;
+		right:0;
+		background:#fff;
+		padding:10%
+		}
+}
